@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/ee1c2b42d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="w-2/3 mx-auto bg-blue-400 h-2/4 mt-20 py-4 rounded-lg">
+      <h1 class="text-3xl text-center font-extrabold">My Text Editor</h1>
+      <div
+        class="bg-blue-200 border-solid border-2 border-black w-3/4 mx-auto px-4 mt-3 mb-3 rounded-md"
+      >
+        <div class="flex flex-col gap-7 lg:flex-row justify-between mt-3">
+          <!-- left div -->
+          <div class="flex justify-center items-center gap-3">
+            <i id="bold" class="fa-sharp fa-solid fa-bold cursor-pointer"></i>
+            <i id="italic" class="fa-solid fa-italic cursor-pointer"></i>
+            <i id="under-line" class="fa-solid fa-underline cursor-pointer"></i>
+          </div>
+          <!-- middle Div -->
+          <div class="flex justify-center items-center gap-4">
+            <i id="left" class="fa-solid fa-align-left cursor-pointer"></i>
+            <i id="center" class="fa-solid fa-align-center cursor-pointer"></i>
+            <i id="right" class="fa-solid fa-align-right cursor-pointer"></i>
+          </div>
+          <!-- right div -->
+          <div class="flex justify-center items-center gap-4">
+            <input
+              id="number-font"
+              class="w-10 rounded-md"
+              type="number"
+              placeholder="00"
+              value="16"
+            />
+            <input id="color" class="cursor-pointer" type="color" />
+          </div>
+        </div>
+        <div class="mt-6">
+          <textarea
+            class="w-full rounded-lg p-4"
+            name=""
+            id="filed"
+            cols="50"
+            rows="15"
+          ></textarea>
+        </div>
+      </div>
+    </main>
+    <script src="./text.js"></script>
+  </body>
+</html>
